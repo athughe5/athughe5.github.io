@@ -69,41 +69,36 @@ nav li {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 40px;
-    align-items: start;
+    grid-template-columns: 450px 350px;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
 }
 
-.welcome,
 .hero-image {
-    height: 350px;
+    border: none;
+    height: 500px;
+    padding: 20px;
 }
 
 .welcome {
     background: #ffffff;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     border: none;
-}
-
-.hero-image {
-    border: none;
-    min-height: 350px;
-    padding: 20px;
+    border-radius: 20px;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .post-text {
     background-color: white;
+    border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -135,6 +130,99 @@ nav li {
     height: 220px;
     object-fit: cover;
     border: none;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid #efa4d5;
+    padding: 12px;
+    text-align: center;
+}
+
+td img {
+    width: 180px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destination {
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.destination h2 {
+    text-align: center;
+    color: #b54f8c;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.guide-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    min-height: 200px;
+    text-align: center;
+}
+
+.guide-card h3 {
+    color: #b54f8c;
+    margin-bottom: 15px;
+}
+
+.guide-card ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.about-photo {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-text,
+.about-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.about h3,
+.about-section h3 {
+    color: #b54f8c;
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
 }
 
 footer {
