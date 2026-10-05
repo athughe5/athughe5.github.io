@@ -133,9 +133,25 @@ nav li {
     border-radius: 20px;
 }
 
+.passport-intro {
+    max-width: 900px;
+    margin: 20px auto 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.table-wrapper {
+    border: 2px solid #efa4d5;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    border: none;
+    background: white;
 }
 
 th,
@@ -144,6 +160,7 @@ td {
     padding: 12px;
     text-align: center;
 }
+
 
 td img {
     width: 180px;
@@ -225,9 +242,219 @@ td img {
     margin-bottom: 10px;
 }
 
+.page-title {
+    text-align: center;
+    color: #b54f8c;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 30px;
+    line-height: 1.6;
+}
+
+.trip-title {
+    text-align: center;
+    color: #b54f8c;
+    font-size: 2.5rem;
+    margin: 40px 0 10px;
+}
+
+.day-title {
+    text-align: center;
+    color: #b54f8c;
+    margin-bottom: 25px;
+}
+
+.trip {
+    margin-bottom: 70px;
+}
+
+.postcard-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.postcard {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .15);
+}
+
+.front {
+    transform: rotate(-2deg);
+}
+
+.front video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.front img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.front-caption {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ececec;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b54f8c;
+}
+
+.back {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    transform: rotate(2deg);
+}
+
+.itinerary {
+    padding: 35px;
+}
+
+.itinerary h3 {
+    text-align: center;
+    color: #b54f8c;
+    margin-bottom: 20px;
+}
+
+.itinerary ul {
+    margin-left: 20px;
+    line-height: 2;
+}
+
+.address-side {
+    border-left: 2px dashed #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+}
+
+.stamp-box {
+    width: 75px;
+    height: 75px;
+    border: 2px dashed #b54f8c;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.address-side hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.address-side p {
+    text-align: center;
+}
+
+.page-title {
+    text-align: center;
+    color: #b54f8c;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+}
+
+.form-card {
+    border-radius: 20px;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+label {
+    color: #b54f8c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    border: 3px solid #b54f8c;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+button {
+    grid-column: 1 / 3;
+    justify-self: center;
+    margin-top: 30px;
+    background: white;
+    border: 3px solid #b54f8c;
+    color: #b54f8c;
+    padding: 12px 40px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b54f8c;
+    color: white;
+}
+
 footer {
     text-align: center;
     padding: 25px;
     color: #b54f8c;
     font-weight: bold;
+}
+
+footer a {
+    color: #b54f8c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
